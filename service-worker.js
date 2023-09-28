@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/igorsharay/millionaire-game/precache-manifest.d86251042a2bf651154c6c5b2e099bff.js"
+  "/millionaire-game/precache-manifest.144c2be98e7315277123d9cd6b812062.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/igorsharay/millionaire-game/index.html", {
+workbox.routing.registerNavigationRoute("/millionaire-game/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
