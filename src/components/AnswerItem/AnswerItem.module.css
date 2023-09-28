@@ -1,0 +1,60 @@
+.answerItem {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.answerBgImage {
+  stroke: var(--color-inactive);
+  fill: var(--color-light);
+  transition: var(--transition);
+  width: 100%;
+  height: auto;
+}
+
+.answerText {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.answerVariantLetter {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.answerItem:hover .answerBgImage {
+  stroke: var(--color-primary);
+  fill: var(--color-light);
+}
+
+.answerItem.active:hover .answerBgImage,
+.active .answerBgImage {
+  stroke: var(--color-primary);
+  fill: var(--color-primary-light);
+}
+
+.answerItem.correct:hover .answerBgImage,
+.correct .answerBgImage {
+  stroke: var(--color-success);
+  fill: var(--color-success-light);
+}
+
+.answerItem.wrong:hover .answerBgImage,
+.wrong .answerBgImage {
+  stroke: var(--color-error);
+  fill: var(--color-error-light);
+}
+
+@media (max-width: 768px) {
+  .answerItem {
+    width: 320px;
+  }
+}

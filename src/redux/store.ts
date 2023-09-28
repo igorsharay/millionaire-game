@@ -1,18 +1,23 @@
-import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import questionsReducer from "./questionsSlice";
-import gameReducer from "./gameSlice";
+import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import levelsReducer from './levelsSlice';
+import gameReducer from './gameSlice';
 
 export const store = configureStore({
   reducer: {
-    questions: questionsReducer,
+    levels: levelsReducer,
     game: gameReducer,
   },
 });
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
-export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, unknown, Action<string>>;
+export type AppThunk<ReturnType = void> = ThunkAction<
+ReturnType,
+RootState,
+unknown,
+Action<string>
+>;
 
 // Use throughout your app instead of plain `useDispatch` and `useSelector`
 export const useAppDispatch = () => useDispatch<AppDispatch>();
