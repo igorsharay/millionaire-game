@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ea898e55bbdf35d6f2ef",
+    "revision": "ab5836e1ace2fe401bd7",
     "url": "/millionaire-game/static/css/main.9078a864.chunk.css"
   },
   {
-    "revision": "ea898e55bbdf35d6f2ef",
-    "url": "/millionaire-game/static/js/main.aa456063.chunk.js"
+    "revision": "ab5836e1ace2fe401bd7",
+    "url": "/millionaire-game/static/js/main.b910ccfa.chunk.js"
   },
   {
     "revision": "5bb73086f6086ffad9a9",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/millionaire-game/static/media/menu.ef9ecc44.svg"
   },
   {
-    "revision": "cf1c4bab95c2a60b0212658517144b59",
+    "revision": "01278e313ada7c9c86c5ffc854868d7e",
     "url": "/millionaire-game/index.html"
   }
 ];
